@@ -1,0 +1,107 @@
+\documentclass[lang=cn,10pt]{elegantbook}
+
+\title{线性代数笔记：基于 \LaTeX{} 的个人知识总结}
+\subtitle{Linear Algebra: Based on \LaTeX{} }
+
+\author{彭正萧 \& PENG Zhengxiao}
+\institute{西北农林科技大学}
+\date{始于2023年11月20日}
+\version{中国农业出版社}
+\bioinfo{模板}{\href{https://github.com/ElegantLaTeX/ElegantNote}{ElegantNote}}
+
+\extrainfo{人不能像走兽那样活着，应该追求知识和美德。 ——但丁}
+
+\setcounter{tocdepth}{3}
+
+\logo{logo.pdf}
+\cover{cover.jpg}
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+\newcommand{\matA}{\mathbf{A}}
+
+% 修改标题页的橙色带
+% \definecolor{customcolor}{RGB}{32,178,170}
+% \colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+
+\mainmatter
+
+\chapter{矩阵}
+
+	\section{矩阵的概念}
+	矩阵的概念
+	\section{矩阵的运算}
+	矩阵的运算
+	\section{分块矩阵}
+	你是谁啊，我不知道啊
+	
+\chapter{\( n \)阶矩阵的行列式}
+
+	\section{\( n \)阶行列式的概念}
+	
+	\section{行列式的性质}
+	
+	\section{\( n \)阶行列式的计算}
+	
+\chapter{\( n \)阶矩阵的逆与矩阵的秩}
+
+	\section{\( n \)阶矩阵的逆}
+	
+	\section{矩阵的初等变换}
+	
+	\section{初等矩阵与求\( n \)阶矩阵的逆}
+	
+	\section{矩阵的秩}
+	
+\chapter{线性方程组与向量组的秩}
+
+	\section{线性方程组的消元法与解的存在性}
+		\subsection{线性方程组解的存在性}
+		\begin{enumerate}
+			\item 非齐次线性方程组有解的充分必要条件
+			\begin{theorem}
+				线性方程组\( \matA x = b \)有解的充分必要条件是\( R(\matA) = R(\bar{A}) \). \\
+				当\( R(A) = R(\bar{A}) = n \)（\( n \)为方程组中未知数的个数）时，线性方程组有唯一解. \\
+				当\( R(A) = R(\bar{A}) < n \)（\( n \)为方程组中未知数的个数）时，线性方程组有无穷多个解.
+			\end{theorem}
+
+		\end{enumerate}
+	\section{向量组与矩阵}
+	
+	\section{向量组的线性相关性}
+	
+	\section{向量组的秩}
+	
+	\section{线性方程解的结构}
+	
+\chapter{\( n \)阶矩阵的对角化与二次型}
+
+	\section{向量的内积与正交矩阵}
+	
+	\section{矩阵的特征值和特征向量}
+	
+	\section{矩阵的对角化}
+	
+	\section{实对称矩阵的对角化}
+	
+	\section{二次型及其标准型}
+	
+	\section{二次型的正定性}
+
+\chapter{线性空间}
+
+	\section{线性空间的概念}
+	
+	\section{满秩坐标变换}
+	
+	\section{线性变换}
+
+\end{document}
