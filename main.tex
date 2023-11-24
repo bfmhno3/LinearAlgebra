@@ -1,6 +1,6 @@
 \documentclass[lang=cn,10pt]{elegantbook}
 
-\title{线性代数笔记：基于 \LaTeX{} 的个人知识总结}
+\title{线性代数：基于 \LaTeX{} 的个人知识总结}
 \subtitle{Linear Algebra: Based on \LaTeX{} }
 
 \author{彭正萧 \& PENG Zhengxiao}
@@ -19,6 +19,7 @@
 % 本文档命令
 \usepackage{array}
 \newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
 \newcommand{\matA}{\mathbf{A}}
 
 % 修改标题页的橙色带
@@ -37,7 +38,60 @@
 \chapter{矩阵}
 
 	\section{矩阵的概念}
-	矩阵的概念
+	\subsection{矩阵的概念}
+	\begin{definition}
+		由\( m \times n \)个数\( a_{ij} (i = 1, 2, \cdots, m; j = 1, 2, \cdots, n) \)排成\( m \)行\( n \)列的矩形数表
+		\[
+			\begin{bmatrix}
+				a_{11} & a_{12} & \cdots & a_{1n} \\
+				a_{21} & a_{22} & \cdots & a_{2n} \\
+				\vdots & \vdots & \ddots & \vdots \\
+				a_{m1} & a_{m2} & \cdots & a_{mn} \\
+			\end{bmatrix}
+		\]
+		此数表称做\( m \)行\( n \)列{\heiti 矩阵}，简称\( m \times n \){\heiti 矩阵}，其中\( a_{ij} \)称为矩阵的第\( i \)行第\( j \)列的{\heiti 元素}，记为
+		\[
+			\matA = 
+			\begin{bmatrix}
+				a_{11} & a_{12} & \cdots & a_{1n} \\
+				a_{21} & a_{22} & \cdots & a_{2n} \\
+				\vdots & \vdots & \ddots & \vdots \\
+				a_{m1} & a_{m2} & \cdots & a_{mn} \\
+			\end{bmatrix}
+		\]
+		有时也记为\( \matA = [a_{ij}]_{m \times n} \)或\( \matA = [a_{ij}] \)或\( A_{m \times n} \).
+	\end{definition}
+	
+	\begin{remark}
+		\begin{itemize}
+			\item 矩阵一般都用黑体大写字母\( \matA, \mathbf{B}, \mathbf{C}, \cdots \)来表示.
+			\item 矩阵既可以用方括号表示，又可以用圆括号表示，即\\
+				\(
+					\begin{bmatrix}
+						a_{11} & a_{12} & \cdots & a_{1n} \\
+						a_{21} & a_{22} & \cdots & a_{2n} \\
+						\vdots & \vdots & \ddots & \vdots \\
+						a_{m1} & a_{m2} & \cdots & a_{mn} \\
+					\end{bmatrix}
+					\Leftrightarrow
+					\begin{pmatrix}
+						a_{11} & a_{12} & \cdots & a_{1n} \\
+						a_{21} & a_{22} & \cdots & a_{2n} \\
+						\vdots & \vdots & \ddots & \vdots \\
+						a_{m1} & a_{m2} & \cdots & a_{mn} \\
+					\end{pmatrix}
+				\)
+			\item 如果矩阵\( \matA \)的元素\( a_{ij} \)全为实数，就称\( \matA \)实矩阵.
+			\item 如果矩阵\( \matA \)有一个元素\( a_{ij} \)为复数，就称\( \matA \)为复矩阵.
+		\end{itemize}
+	\end{remark}
+	
+	\subsection{几种特殊的矩阵}
+		\begin{enumerate}
+			\item 对角矩阵
+			\item 上（下）三角矩阵
+			\item 对称矩阵与反对称矩阵
+		\end{enumerate}
 	\section{矩阵的运算}
 	矩阵的运算
 	\section{分块矩阵}
@@ -103,5 +157,11 @@
 	\section{满秩坐标变换}
 	
 	\section{线性变换}
+
+\chapter{你是谁}
+
+%\printbibliography[heading=bibintoc, title=\ebibname]
+\appendix
+
 
 \end{document}
